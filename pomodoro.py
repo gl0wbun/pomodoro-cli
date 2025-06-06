@@ -1,13 +1,20 @@
-from colorama import init, Fore, Style
+from colorama import init, Style
 from plyer import notification  
 import os
 import shutil
 import time
 
+try:
+    from playsound import playsound
+    SOUND_AVAILABLE = True
+except ImportError:
+    SOUND_AVAILABLE = False
+
 init(autoreset=True)
 
 WORK_MINUTES = 25
 SHORT_BREAK = 5
+ALARM_SOUND = "alarm.mp3"
 
 def center(text, width=None):
     if width is None:
@@ -21,10 +28,19 @@ def show_notification(title, message):
         timeout=10,  
     )
 
+def play_alarm():
+    if SOUND_AVAILABLE and os.path.exists(ALARM_SOUND):
+        try:
+            playsound(ALARM_SOUND)
+        except Exception as e:
+            print(f"\n⚠️ Error playing alarm: {e}")
+    else:
+        print("\n🔔 Alarm sound not available or missing file.")
+
 def countdown(minutes, label, emoji, color, notify=False):
     total_seconds = minutes * 60
     width = shutil.get_terminal_size((80, 20)).columns
-    header = f"🧠 {label} — {minutes} minutes"
+    header = f"{emoji} {label} — {minutes} minutes"
     print(color + Style.BRIGHT + center(header, width))
     
     base_line = "⏳ Time left: "
@@ -43,6 +59,8 @@ def countdown(minutes, label, emoji, color, notify=False):
         
         if notify:
             show_notification(f"{label} Ended", f"Time's up for {label.lower()}!")
+
+        play_alarm()
     
     except KeyboardInterrupt:
         PASTEL_RED = '\033[38;5;210m'
@@ -61,11 +79,11 @@ def pomodoro_loop():
             print(PASTEL_PINK + Style.BRIGHT + center(f"🐰 NERDYBUNNI'S POMODORO TIMER — Cycle {cycle} 🍭\n") + RESET)
             
             PASTEL_PURPLE = '\033[38;5;225m'
-            countdown(WORK_MINUTES, "Work Session", "🧠", PASTEL_PURPLE, notify=True)
+            countdown(WORK_MINUTES, "Work Session", "☕", PASTEL_PURPLE, notify=True)
             
             os.system('cls' if os.name == 'nt' else 'clear')
             PASTEL_YELLOW = '\033[38;5;229m'
-            countdown(SHORT_BREAK, "Short Break", "☕", PASTEL_YELLOW, notify=True)
+            countdown(SHORT_BREAK, "Short Break", "🍃", PASTEL_YELLOW, notify=True)
             
             cycle += 1
 
