@@ -42,5 +42,5 @@ SHORT_BREAK = 5
 ```
 
 ## 🧸 Credits
-Made with productivity and aesthetics in mind by [nerdybunni](https://github.com/nerdybunni)
+Made with productivity and aesthetics in mind by [nerdybunni](https://github.com/nerdybunni)<br>
 Terminal color inspired by pastel palettes and kawaii themes 💕
