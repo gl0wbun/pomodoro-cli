@@ -1,4 +1,4 @@
-# 🐰 NerdyBunni's Pomodoro CLI Timer 🍭
+# Kohaimi's Pomodoro CLI Timer 🍭
 
 A cute and effective command-line Pomodoro timer designed to help you stay focused and productive.
 
@@ -24,7 +24,7 @@ Install dependencies via pip:
 ## 🚀 How to Run
 Clone the repository:
 ```
-git clone https://github.com/nerdybunni/pomodoro-cli.git
+git clone https://github.com/kohaimi/pomodoro-cli.git
 cd pomodoro-cli
 ```
 Run the script:
@@ -46,5 +46,5 @@ ALARM_SOUND = "alarm.mp3"
 ```
 
 ## 🧸 Credits
-Made with productivity and aesthetics in mind by [nerdybunni](https://github.com/nerdybunni)<br>
+Made with productivity and aesthetics in mind by [kohaimi](https://github.com/kohaimi)<br>
 Terminal color inspired by pastel palettes and kawaii themes 💕
