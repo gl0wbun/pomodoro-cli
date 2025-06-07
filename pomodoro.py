@@ -76,7 +76,7 @@ def pomodoro_loop():
             os.system('cls' if os.name == 'nt' else 'clear')
             PASTEL_PINK = '\033[95m'  
             RESET = '\033[0m'
-            print(PASTEL_PINK + Style.BRIGHT + center(f"🐰 NERDYBUNNI'S POMODORO TIMER — Cycle {cycle} 🍭\n") + RESET)
+            print(PASTEL_PINK + Style.BRIGHT + center(f"KOHAIMI'S POMODORO TIMER — Cycle {cycle} 🍭\n") + RESET)
             
             PASTEL_PURPLE = '\033[38;5;225m'
             countdown(WORK_MINUTES, "Work Session", "☕", PASTEL_PURPLE, notify=True)
