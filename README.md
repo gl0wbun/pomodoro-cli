@@ -44,7 +44,7 @@ WORK_MINUTES = 25
 SHORT_BREAK = 5
 ALARM_SOUND = "alarm.mp3"
 ```
-Feel free to change 'KOHAIMI' to your name in this line of code:
+Feel free to change 'KOHAIMI' to your name in this line of code:<br>
 `print(PASTEL_PINK + Style.BRIGHT + center(f"KOHAIMI'S POMODORO TIMER — Cycle {cycle} 🍭\n") + RESET`
 
 ## 🧸 Credits
