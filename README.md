@@ -46,5 +46,5 @@ ALARM_SOUND = "alarm.mp3"
 ```
 
 ## 🧸 Credits
-Made with productivity and aesthetics in mind by [nerdybunni](https://github.com/nerdybunni)<br>
+Made with productivity and aesthetics in mind by [kohaimi](https://github.com/kohaimi)<br>
 Terminal color inspired by pastel palettes and kawaii themes 💕
