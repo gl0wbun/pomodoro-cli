@@ -1,4 +1,4 @@
-# 🐰 NerdyBunni's Pomodoro CLI Timer 🍭
+# Kohaimi's Pomodoro CLI Timer 🍭
 
 A cute and effective command-line Pomodoro timer designed to help you stay focused and productive.
 
