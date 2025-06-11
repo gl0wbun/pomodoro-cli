@@ -1,4 +1,4 @@
-# Kohaimi's Pomodoro CLI Timer 🍭
+# gl0wbun's Pomodoro CLI Timer 🍭
 
 A cute and effective command-line Pomodoro timer designed to help you stay focused and productive.
 
@@ -24,7 +24,7 @@ Install dependencies via pip:
 ## 🚀 How to Run
 Clone the repository:
 ```
-git clone https://github.com/kohaimi/pomodoro-cli.git
+git clone https://github.com/gl0wbun/pomodoro-cli.git
 cd pomodoro-cli
 ```
 Run the script:
@@ -44,9 +44,9 @@ WORK_MINUTES = 25
 SHORT_BREAK = 5
 ALARM_SOUND = "alarm.mp3"
 ```
-Feel free to change 'KOHAIMI' to your name in this line of code:<br>
-`print(PASTEL_PINK + Style.BRIGHT + center(f"KOHAIMI'S POMODORO TIMER — Cycle {cycle} 🍭\n") + RESET`
+Feel free to change <b>gl0wbun</b> to your name in this line of code:<br>
+`print(PASTEL_PINK + Style.BRIGHT + center(f"gl0wbun'S POMODORO TIMER — Cycle {cycle} 🍭\n") + RESET`
 
 ## 🧸 Credits
-Made with productivity and aesthetics in mind by [kohaimi](https://github.com/kohaimi)<br>
+Made with productivity and aesthetics in mind by [gl0wbun](https://github.com/gl0wbun)<br>
 Terminal color inspired by pastel palettes and kawaii themes 💕
