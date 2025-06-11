@@ -45,7 +45,7 @@ SHORT_BREAK = 5
 ALARM_SOUND = "alarm.mp3"
 ```
 Feel free to change <b>gl0wbun</b> to your name in this line of code:<br>
-`print(PASTEL_PINK + Style.BRIGHT + center(f"gl0wbun'S POMODORO TIMER — Cycle {cycle} 🍭\n") + RESET`
+`print(PASTEL_PINK + Style.BRIGHT + center(f"gl0wbun's POMODORO TIMER — Cycle {cycle} 🍭\n") + RESET`
 
 ## 🧸 Credits
 Made with productivity and aesthetics in mind by [gl0wbun](https://github.com/gl0wbun)<br>
